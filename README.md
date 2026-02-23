@@ -8,4 +8,4 @@
 | RNF01 | Controle de Versão | O código deve ser versionado utilizando Git.                         |
 | RNF02 | Documentação       | O projeto deve conter um diagrama Entidade-Relacionamento (ER).      |
 ## DIAGRAMA ENTIDADE-RELACIONAMENTO
-![Diagrama Entidade-Relacionamento](docs/assets/diagramaSatellite.jpeg)# monitoramento-orbital-amazonia1
+![Diagrama Entidade-Relacionamento](docs/assets/diagramaSatellite.jpeg)
