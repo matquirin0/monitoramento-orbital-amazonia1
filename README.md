@@ -9,3 +9,4 @@
 | RNF02 | Documentação       | O projeto deve conter um diagrama Entidade-Relacionamento (ER).      |
 ## DIAGRAMA ENTIDADE-RELACIONAMENTO
 ![Diagrama Entidade-Relacionamento](docs/assets/diagramaSatellite.jpeg)
+
