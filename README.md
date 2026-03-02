@@ -62,6 +62,8 @@ A estrutura relacional foi desenhada para manter a integridade dos dados orbitai
 | `ground_stations` | Coordenadas geográficas das estações de solo |
 | `pass_predictions` | Registro histórico de janelas de passagem, com chaves estrangeiras para satélites e estações |
 
+![Diagrama ER Monitoramento Orbital](docs/assets/diagramaSatellite.jpeg)
+
 ## 📈 Resultados
 
 O sistema gera automaticamente gráficos de elevação máxima por janela de passagem, salvos em:
