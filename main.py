@@ -1,6 +1,6 @@
 from src.extractor import fetch_radio_passes
 from src.transformer import transform_pass_data
-from src.database import insert_passes
+from src.database import insert_passes, clear_all_predictions
 from src.visualizer import generate_elevation_chart
 
 
@@ -12,8 +12,10 @@ def run_pipeline():
 
     print("--- INICIANDO MONITORAMENTO ORBITAL AMAZONIA-1 ---")
 
+    clear_all_predictions()
+
     # 2. Extração
-    raw_data = fetch_radio_passes(NORAD_ID, LAT, LNG, ALT)
+    raw_data = fetch_radio_passes(NORAD_ID, LAT, LNG, ALT,days=2)
 
     if not raw_data:
         print("[ABORTAR] Falha na extração dos dados.")
