@@ -1,6 +1,8 @@
 from src.extractor import fetch_radio_passes
 from src.transformer import transform_pass_data
 from src.database import insert_passes
+from src.visualizer import generate_elevation_chart
+
 
 def run_pipeline():
     # 1. Configurações Iniciais (Amazonia-1 e Estação SJC)
@@ -24,6 +26,10 @@ def run_pipeline():
     insert_passes(clean_data)
 
     print("--- PROCESSO CONCLUÍDO COM SUCESSO ---")
+
+
+    # 5. Criação do gráfico
+    generate_elevation_chart()
 
 if __name__ == "__main__":
     run_pipeline()
