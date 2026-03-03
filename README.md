@@ -15,6 +15,12 @@ Este sistema é um pipeline de dados (ETL) desenvolvido para prever e visualizar
 | RNF-02 | Gestão de variáveis de ambiente via `.env` | Não Funcional | Alta | ✅ Implementado |
 
 ---
+## 🚥 Arquitetura do Pipeline ETL
+![Diagrama de fluxo ETL](docs/assets/Diagrama%20de%20fluxo%20ETL%20(2).jpg)
+Fluxo modular automatizado que extrai dados orbitais da API N2YO.
+Realiza o processamento e normalização em Python.
+Persistência dos dados em PostgreSQL para análise técnica e visualização.
+
 
 ## 📊 Resultados de Monitoramento
 
