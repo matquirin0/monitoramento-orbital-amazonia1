@@ -23,3 +23,9 @@ def insert_passes(pass_list):
         for p in pass_list:
             conn.execute(query, p)
     print(f"[DATABASE] {len(pass_list)} passagens gravadas via SQLAlchemy!")
+
+def clear_all_predictions():
+    engine = get_engine()
+    with engine.begin() as conn:
+        conn.execute(text("TRUNCATE TABLE pass_predictions;"))
+    print("[DATABASE] Tabela de previsões resetada para nova carga.")
