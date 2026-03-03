@@ -17,7 +17,13 @@ def generate_elevation_chart():
         folder_name = os.path.join(root_dir, 'docs', 'assets', 'reports')
         os.makedirs(folder_name, exist_ok=True)
 
-        query = "SELECT start_utc, max_elevation FROM pass_predictions ORDER BY start_utc;"
+        query = """
+            SELECT DISTINCT ON (start_utc) start_utc, max_elevation
+            FROM pass_predictions
+            WHERE start_utc >= NOW()
+            ORDER BY start_utc ASC
+            LIMIT 7;
+        """
         df = pd.read_sql(query, engine)
 
         if df.empty:
