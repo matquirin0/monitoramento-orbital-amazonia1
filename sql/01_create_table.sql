@@ -28,7 +28,7 @@ CREATE TABLE pass_predictions (
                                   CONSTRAINT fk_satellities
                                       FOREIGN KEY (id_norad)
                                           REFERENCES satellities(id_norad)
-                                          ON DELETE SET NUL L,
+                                          ON DELETE SET NULL,
 
                                   CONSTRAINT fk_ground_stations
                                       FOREIGN KEY (id_gs)
