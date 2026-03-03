@@ -16,7 +16,7 @@ Este sistema é um pipeline de dados (ETL) desenvolvido para prever e visualizar
 
 ---
 ## 🚥 Arquitetura do Pipeline ETL
-![Diagrama de fluxo ETL](docs/assets/Diagrama%20de%20fluxo%20ETL%20(2).jpg)
+
 Fluxo modular automatizado que extrai dados orbitais da API N2YO.
 Realiza o processamento e normalização em Python.
 Persistência dos dados em PostgreSQL para análise técnica e visualização.
@@ -55,6 +55,9 @@ O projeto está organizado modularmente para garantir escalabilidade:
 3. **Carga** (`database.py`): Insere os dados processados no PostgreSQL utilizando o Engine do SQLAlchemy.
 4. **Visualização** (`visualizer.py`): Gera relatórios gráficos na pasta `docs/assets/reports/` com carimbos de data/hora.
 5. **Orquestração** (`main.py`): Script principal que coordena o fluxo completo do pipeline.
+
+### Diagrama do Pipeline ETL
+![Diagrama de fluxo ETL](docs/assets/Diagrama%20de%20fluxo%20ETL%20(2).jpg)
 
 ---
 
