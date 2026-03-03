@@ -1,6 +1,6 @@
 CREATE DATABASE monitoramento_orbital_amazonia1;
 
-CREATE TABLE satellities (
+CREATE TABLE satellites (
                              id_norad INTEGER PRIMARY KEY,
                              name VARCHAR(50) NOT NULL,
                              operator VARCHAR(100) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE pass_predictions (
                                   id_norad INTEGER,
                                   id_gs INTEGER,
 
-                                  CONSTRAINT fk_satellities
+                                  CONSTRAINT fk_satellites
                                       FOREIGN KEY (id_norad)
                                           REFERENCES satellities(id_norad)
                                           ON DELETE SET NULL,
