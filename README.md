@@ -14,14 +14,6 @@ Este sistema é um pipeline de dados (ETL) desenvolvido para prever e visualizar
 | RNF-01 | Arquitetura modular e escalável | Não Funcional | Alta | ✅ Implementado |
 | RNF-02 | Gestão de variáveis de ambiente via `.env` | Não Funcional | Alta | ✅ Implementado |
 
----
-## 🚥 Arquitetura do Pipeline ETL
-
-Fluxo modular automatizado que extrai dados orbitais da API N2YO.
-Realiza o processamento e normalização em Python.
-Persistência dos dados em PostgreSQL para análise técnica e visualização.
-
-
 ## 📊 Resultados de Monitoramento
 
 O sistema exporta automaticamente relatórios gráficos para análise da qualidade das janelas de comunicação. O gráfico abaixo apresenta a elevação máxima atingida pelo satélite em cada passagem prevista sobre a estação de solo:
